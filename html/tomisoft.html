@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+  <title>呼叫中心产品概览</title>
+  <meta name="view port" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="keywords"
+        content="软件开发 系统集成 高科技企业。政府 军队  电力  金融  电信 能源  教育行业和中小企业客户"/>
+  <!-- css links -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+  
+  <link href="css/slider.css" rel="stylesheet" type="text/css" media="all"/>
+  <link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+  <!-- /css links -->
+
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">
+        <img class="img-responsive" style="width:150px; height:68px;" src="images/logo.png">
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="scroll hvr-underline-from-center"><a href="index.html">主页</a></li>
+        <li><a class="scroll hvr-underline-from-center" href="index.html">关于</a></li>
+        <li><a class="scroll hvr-underline-from-center" href="index.html">产品服务</a></li>
+        <li><a class="hvr-underline-from-center" href="index.html">联系我们</a></li>
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+</nav>
+<!-- /Fixed navbar -->
+
+<!--产品概览-->
+
+<div class="pro_intro">
+  <h1 class="text-center">呼叫中心 概览</h1>
+  <img src="images/tomisoft.jpg" alt="">
+</div>
+
+<!-- footer -->
+<div class="footer_w3l_agile_info">
+  <div class="container">
+    <!-- 联系信息 -->
+    <div class="col-md-12 agile_footer_grid">
+      <h3>联系信息</h3>
+      <ul class="w3_address">
+        <li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>地址：河北省石家庄市长征街75号</li>
+        <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i>邮箱：<a href="mailto:info@example.com">
+          info@hbwrrj.com</a>
+        </li>
+        <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>电话： 400-860-3637
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="agileinfo_copyright">
+    <p>河北威日软件科技有限公司 全国统一服务热线：400-860-3637</p>
+  </div>
+</div>
+</div>
+
+<!--微信关注、电话咨询-->
+<div class="qq_wx_tel">
+  <div class="qq">
+    <a href="tencent://Message/?Uin=1205608519&websiteName=#=&Menu=yes"></a>
+  </div>
+  <div class="wx">
+    <img src="images/1496194373.png" alt="">
+  </div>
+  <div class="tel">
+    <div class="tel_num">400-860-3637</div>
+  </div>
+</div>
+<!-- //footer -->
+<a href="#myPage" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+
+<!-- js files -->
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/index.js"></script>
+<script>
+  $(document).ready(function () {
+    // Add smooth scrolling to all links in navbar + footer link
+    $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function () {
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    });
+  })
+</script>
+<script>
+  $(window).scroll(function () {
+    $(".slideanim").each(function () {
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+      if (pos < winTop + 600) {
+        $(this).addClass("slide");
+      }
+    });
+  });
+</script>
+<script src="js/bootstrap.js"></script>
+<!-- /js files -->
+</body>
+</html>
